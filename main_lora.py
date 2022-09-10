@@ -21,15 +21,15 @@ threshold_hum_lower = 20.0
 threshold_hum_higher = 65.0
 
 #Sliding window setting
-batch_size = 5
-train_number = 50
+batch_size = 120
+train_number = 120960
 
 #Model parameter
 outlier_fraction_param = 0.01 #1% error
 
 #Clustering setting
-anomaly_thresTemp_param = 2
-anomaly_thresHum_param = 2
+anomaly_thresTemp_param = 3
+anomaly_thresHum_param = 3
 
 #Declare all library and array
 nid_library = {} #Temperature
@@ -310,4 +310,3 @@ while True:
 
         except Exception as e:
             print(e)
-        
